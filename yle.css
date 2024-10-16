@@ -1,0 +1,236 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --bg-color: #000;
+    --snd-bg-color: #111;
+    --text-color: #fff;
+    --main-color: #45ffca;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 6.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.item {
+    background: var(--bg-color);
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px goldenrod;
+    padding: 20px;
+    transition: all 0.5s ease;
+    background-color:burlywood;
+}
+
+.item img {
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+}
+
+.title {
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+}
+
+.item:hover {
+    border: 1px solid goldenrod;
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: block;
+    justify-content: space-between;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: burlywood;
+    color: var(--main-color);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 0px;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-left: 4rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar a:hover,
+.navbar a.activate {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    border: 3px;
+    border-radius: 2%;
+    border-style: double;
+    border-color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Main header container */
+header {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    padding: 10px 20px; /* Adds padding around the header */
+    box-sizing: border-box;
+    width: 100%;
+    position: relative; /* To handle positioning the button */
+  }
+  
+  /* Logo or first element */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
+    white-space: nowrap; /* Prevents the text from wrapping into a new line */
+    margin-right: auto; /* Ensures the logo stays on the left */
+  }
+  
+  /* Navigation menu */
+  nav {
+    display: flex;
+    gap: 20px; /* Adds space between the navigation links */
+    justify-content: center; /* Centers the navigation items */
+  }
+  
+  /* Navigation links */
+  nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    padding: 0 10px; /* Adds space around the navigation items */
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+  
+  /* Join Us button */
+  .join-us {
+    border: 2px solid #00ffcc;
+    padding: 10px 15px;
+    color: #00ffcc;
+    text-decoration: none;
+    position: absolute; /* Absolutely position the button */
+    right: 20px; /* Aligns the button to the right of the screen */
+  }
+  
+  .join-us:hover {
+    background-color: #00ffcc;
+    color: #000;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .join-us {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+
+  ul {
+    list-style-type: none; /* Removes the bullet point */
+    padding: 0; /* Optional: removes default padding */
+    margin: 0; /* Optional: removes default margin */
+  }
+
+  @media (max-width:991px) {
+    .services{
+        padding: 7rem;
+    }
+  }
